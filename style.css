@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    outline: red 1px solid;
 }
 
 body {
@@ -42,13 +41,17 @@ body {
 
 .content-container {
     display: flex;
+    flex-direction: column;
+    flex: 1;
     justify-content: space-between;
 }
 
 .content h1 {
+    display: flex;
     margin-left: 48px;
     color: #f9faf8;
     font-weight: 900;
+    flex-wrap: wrap;
 }
 
 .content p {
@@ -65,21 +68,22 @@ button {
     background-color: #3882f6;
     color: white;
     border-style: none;
-    padding: 12px 24px;
+    padding: 6px 24px;
     border-radius: 6px;
     margin-left: 48px;
+    
 }
 
 img {
-    border-color: #3882F6;
     border-radius: 5px;
-    border-style: solid;;
+    margin-bottom: 100px;
+    margin-right: 100px;
 }
 
 .placeholder {
-    margin-left: 48px;
-    margin-top: 24px;
-    width: 300px;
-    height: 300px;
+    display: flex;
+    width: 100%;
+    height: auto;
     justify-content: flex-end;
+    margin-top: -100px;;
 }
